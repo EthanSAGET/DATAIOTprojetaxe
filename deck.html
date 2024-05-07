@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site de Trading de Cartes - Cartes</title>
+    <link rel="stylesheet" href="assets/css/style_deck.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Site de Trading de Cartes</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#">Profil</a></li>
+          <li><a href="trade.html">TRADE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="filtres">
+        <h2>Filtres</h2>
+        <form action="#">
+          <label for="maison">Maison:</label>
+          <select id="maison" name="maison">
+            <option value="">Toutes</option>
+            <option value="bleu">Bleue</option>
+            <option value="rouge">Rouge</option>
+            <option value="verte">Verte</option>
+            <option value="noire">Noire</option>
+            <option value="blanche">Blanche</option>
+          </select>
+
+          <label for="rareté">Rareté:</label>
+          <select id="rareté" name="rareté">
+            <option value="">Toutes</option>
+            <option value="commune">Commune</option>
+            <option value="peu_commune">Peu Commune</option>
+            <option value="rare">Rare</option>
+            <option value="mythique">Mythique</option>
+          </select>
+
+          <label for="type">Type:</label>
+          <select id="type" name="type">
+            <option value="">Tous</option>
+            <option value="créature">Créature</option>
+            <option value="sort">Sort</option>
+            <option value="artefact">Artefact</option>
+            <option value="terrain">Terrain</option>
+          </select>
+
+          <button type="submit">Filtrer</button>
+        </form>
+      </section>
+
+      <section class="cartes">
+        <h2>Cartes disponibles</h2>
+        <div class="carte-container"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Site de Trading de Cartes</p>
+    </footer>
+
+    <script src="assets/js/js api/script_deck.js"></script>
+    <script src="assets/js/js api/script.js"></script>
+    <script src="assets/js/js api/script_led.js"></script>
+  </body>
+</html>

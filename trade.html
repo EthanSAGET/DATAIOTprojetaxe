@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Échange de cartes</title>
+    <link rel="stylesheet" href="assets/css/style_trade.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Échange de cartes</h1>
+    </header>
+
+    <div class="trading-center">
+      <div class="trade-section">
+        <h2>Trade With</h2>
+        <select id="traderSelect">
+          <!-- Dynamically loaded trader options -->
+          <option value="trader1">Trader 1</option>
+          <option value="trader2">Trader 2</option>
+          <!-- More options -->
+        </select>
+        <div class="cards-container">
+          <!-- Trader's cards -->
+          <div class="card">Card A</div>
+          <div class="card">Card B</div>
+          <!-- More trader's cards -->
+        </div>
+      </div>
+
+      <div class="trade-section">
+        <h2>Your Cards</h2>
+        <div class="cards-container">
+          <!-- User's cards with checkboxes -->
+          <div class="card">
+            <img src="card1.jpg" alt="Card 1" />
+            <input type="checkbox" name="yourCards" value="card1" />
+          </div>
+          <div class="card">
+            <img src="card2.jpg" alt="Card 2" />
+            <input type="checkbox" name="yourCards" value="card2" />
+          </div>
+          <!-- More user's cards -->
+        </div>
+      </div>
+
+      <button id="tradeButton">Trade</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Échange de cartes</p>
+    </footer>
+
+    <script src="assets/js/js api/script.js"></script>
+    <script src="assets/js/js api/script_trade.js"></script>
+  </body>
+</html>
